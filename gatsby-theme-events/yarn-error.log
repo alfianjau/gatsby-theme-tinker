@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js add gatsby-source-filessystem gatsby-transformer-yaml
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js add gatbsy-theme-ui theme-ui @emotion/core @emotion/styled @mdx-js/react
 
 PATH: 
   /Users/Unicornique/.rbenv/shims:/Users/Unicornique/.rbenv/shims:/Users/Unicornique/Library/Python/3.7/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/node@latest/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/Users/Unicornique/.yarn/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Unicornique/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/gatsby-source-filessystem: Not found
+  Error: https://registry.yarnpkg.com/gatbsy-theme-ui: Not found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:66987:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:140748:22)
       at Request.emit (events.js:197:13)
@@ -46,6 +46,10 @@ npm manifest:
       "gatsby": "^2.20.13",
       "react": "^16.13.1",
       "react-dom": "^16.13.1"
+    },
+    "dependencies": {
+      "gatsby-source-filesystem": "^2.2.2",
+      "gatsby-transformer-yaml": "^2.3.1"
     }
   }
 
@@ -3019,6 +3023,11 @@ Lockfile:
       domutils "^1.7.0"
       nth-check "^1.0.2"
   
+  css-selector-parser@^1.1.0:
+    version "1.3.0"
+    resolved "https://registry.yarnpkg.com/css-selector-parser/-/css-selector-parser-1.3.0.tgz#5f1ad43e2d8eefbfdc304fcd39a521664943e3eb"
+    integrity sha1-XxrUPi2O77/cME/NOaUhZklD4+s=
+  
   css-selector-tokenizer@^0.7.0:
     version "0.7.2"
     resolved "https://registry.yarnpkg.com/css-selector-tokenizer/-/css-selector-tokenizer-0.7.2.tgz#11e5e27c9a48d90284f22d45061c303d7a25ad87"
@@ -4256,6 +4265,11 @@ Lockfile:
       loader-utils "^1.0.2"
       schema-utils "^0.4.5"
   
+  file-type@^12.4.2:
+    version "12.4.2"
+    resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.4.2.tgz#a344ea5664a1d01447ee7fb1b635f72feb6169d9"
+    integrity sha512-UssQP5ZgIOKelfsaB5CuGAL+Y+q7EmONuiwF3N5HAH0t27rvrttgi6Ra9k/+DVaY9UF6+ybxu5pOXLUdA8N7Vg==
+  
   file-uri-to-path@1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
@@ -4589,6 +4603,27 @@ Lockfile:
       scroll-behavior "^0.9.12"
       warning "^3.0.0"
   
+  gatsby-source-filesystem@^2.2.2:
+    version "2.2.2"
+    resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.2.2.tgz#9ecbc9e64fedd1c30b4d21f7e148016353b2dc17"
+    integrity sha512-uHHCiTp8/q9JF0Yr14Q5aJZ07jUJSV6HJSnrSVnEIF4PfRQkVJG5FHQULmxJUXWQhIoy17EGuzqVjxMsFY69QA==
+    dependencies:
+      "@babel/runtime" "^7.8.7"
+      better-queue "^3.8.10"
+      bluebird "^3.7.2"
+      chokidar "3.3.1"
+      file-type "^12.4.2"
+      fs-extra "^8.1.0"
+      gatsby-core-utils "^1.1.1"
+      got "^9.6.0"
+      md5-file "^3.2.3"
+      mime "^2.4.4"
+      pretty-bytes "^5.3.0"
+      progress "^2.0.3"
+      read-chunk "^3.2.0"
+      valid-url "^1.0.9"
+      xstate "^4.8.0"
+  
   gatsby-telemetry@^1.2.3:
     version "1.2.3"
     resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.2.3.tgz#0b38068bbc85a597afb7ee407fb0240997cec6ef"
@@ -4611,6 +4646,16 @@ Lockfile:
       stack-trace "^0.0.10"
       stack-utils "1.0.2"
       uuid "3.4.0"
+  
+  gatsby-transformer-yaml@^2.3.1:
+    version "2.3.1"
+    resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-2.3.1.tgz#9b058e296367e22d3f9b72044aadd00a51ff75a3"
+    integrity sha512-vLbxiwK9OAl3YWgWE2Nq7s0vwsjCC4lWYTFBJuYz/XeeBXFmzYs9pu/Edq7PtTTsWU8W0jjuLDO3f0OdjOK7FQ==
+    dependencies:
+      "@babel/runtime" "^7.8.7"
+      js-yaml "^3.13.1"
+      lodash "^4.17.15"
+      unist-util-select "^1.5.0"
   
   gatsby@^2.20.13:
     version "2.20.13"
@@ -7019,7 +7064,7 @@ Lockfile:
     dependencies:
       path-key "^3.0.0"
   
-  nth-check@^1.0.2, nth-check@~1.0.1:
+  nth-check@^1.0.1, nth-check@^1.0.2, nth-check@~1.0.1:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-1.0.2.tgz#b2bd295c37e3dd58a3bf0700376663ba4d9cf05c"
     integrity sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==
@@ -7359,7 +7404,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
     integrity sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=
   
-  p-try@^2.0.0:
+  p-try@^2.0.0, p-try@^2.1.0:
     version "2.2.0"
     resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
     integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
@@ -8019,6 +8064,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
     integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
   
+  pretty-bytes@^5.3.0:
+    version "5.3.0"
+    resolved "https://registry.yarnpkg.com/pretty-bytes/-/pretty-bytes-5.3.0.tgz#f2849e27db79fb4d6cfe24764fc4134f165989f2"
+    integrity sha512-hjGrh+P926p4R4WbaB6OckyRtO0F0/lQBiT+0gnxjV+5kjPBrfVBFCsCLbMqVQeydvIoouYTCmmEURiH3R1Bdg==
+  
   pretty-error@^2.1.1:
     version "2.1.1"
     resolved "https://registry.yarnpkg.com/pretty-error/-/pretty-error-2.1.1.tgz#5f4f87c8f91e5ae3f3ba87ab4cf5e03b1a17f1a3"
@@ -8363,6 +8413,14 @@ Lockfile:
       loose-envify "^1.1.0"
       object-assign "^4.1.1"
       prop-types "^15.6.2"
+  
+  read-chunk@^3.2.0:
+    version "3.2.0"
+    resolved "https://registry.yarnpkg.com/read-chunk/-/read-chunk-3.2.0.tgz#2984afe78ca9bfbbdb74b19387bf9e86289c16ca"
+    integrity sha512-CEjy9LCzhmD7nUpJ1oVOE6s/hBkejlcJEgLQHVnQznOSilOPb+kpKktlLfFDK3/WP43+F80xkUTM2VOkYoSYvQ==
+    dependencies:
+      pify "^4.0.1"
+      with-open-file "^0.1.6"
   
   read-pkg-up@^2.0.0:
     version "2.0.0"
@@ -9929,6 +9987,15 @@ Lockfile:
     dependencies:
       crypto-random-string "^2.0.0"
   
+  unist-util-select@^1.5.0:
+    version "1.5.0"
+    resolved "https://registry.yarnpkg.com/unist-util-select/-/unist-util-select-1.5.0.tgz#a93c2be8c0f653827803b81331adec2aa24cd933"
+    integrity sha1-qTwr6MD2U4J4A7gTMa3sKqJM2TM=
+    dependencies:
+      css-selector-parser "^1.1.0"
+      debug "^2.2.0"
+      nth-check "^1.0.1"
+  
   universalify@^0.1.0:
     version "0.1.2"
     resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
@@ -10082,6 +10149,11 @@ Lockfile:
     version "2.1.0"
     resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.0.tgz#e14de37b31a6d194f5690d67efc4e7f6fc6ab30e"
     integrity sha512-usZBT3PW+LOjM25wbqIlZwPeJV+3OSz3M1k1Ws8snlW39dZyYL9lOGC5FgPVHfk0jKmjiDV8Z0mIbVQPiwFs7g==
+  
+  valid-url@^1.0.9:
+    version "1.0.9"
+    resolved "https://registry.yarnpkg.com/valid-url/-/valid-url-1.0.9.tgz#1c14479b40f1397a75782f115e4086447433a200"
+    integrity sha1-HBRHm0DxOXp1eC8RXkCGRHQzogA=
   
   validate-npm-package-license@^3.0.1:
     version "3.0.4"
@@ -10304,6 +10376,15 @@ Lockfile:
     integrity sha512-NsmoXalsWVDMGupxZ5R08ka9flZjjiLvHVAWYOKtiKM8ujtZWr9cRffak+uSE48+Ob8ObalXpwyeUiyDD6QFgg==
     dependencies:
       string-width "^4.0.0"
+  
+  with-open-file@^0.1.6:
+    version "0.1.7"
+    resolved "https://registry.yarnpkg.com/with-open-file/-/with-open-file-0.1.7.tgz#e2de8d974e8a8ae6e58886be4fe8e7465b58a729"
+    integrity sha512-ecJS2/oHtESJ1t3ZfMI3B7KIDKyfN0O16miWxdn30zdh66Yd3LsRFebXZXq6GU4xfxLf6nVxp9kIqElb5fqczA==
+    dependencies:
+      p-finally "^1.0.0"
+      p-try "^2.1.0"
+      pify "^4.0.1"
   
   word-wrap@~1.2.3:
     version "1.2.3"
