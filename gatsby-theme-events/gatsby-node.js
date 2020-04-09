@@ -1,8 +1,8 @@
 const fs = require('fs')
 
 // make sure data directory exist
-exports.onPreBootstrap = ({ reporter }) => {
-  const contentPath = 'data'
+exports.onPreBootstrap = ({ reporter }, options) => {
+  const contentPath = options.contentPath || 'data'
 
   if (!fs.existsSync(contentPath)) {
     reporter.info(`creating the ${contentPath} directory`)
@@ -47,8 +47,8 @@ exports.createResolvers = ({ createResolvers }, options) => {
 }
 
 // query for event and create pages
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const basePath = '/'
+exports.createPages = async ({ actions, graphql, reporter }, options) => {
+  const basePath = options.basePath || '/'
   actions.createPage({
     path: basePath,
     component: require.resolve('./src/templates/events.js'),
