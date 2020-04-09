@@ -11,3 +11,5 @@ yarn workspace site develop
 yarn workspace gatsby-theme-events add gatsby-source-filesystem gatsby-transformer-yaml
 
 yarn workspace gatsby-theme-events develop //check graphql
+
+yarn workspace gatsby-theme-events develop //test gatsby page
