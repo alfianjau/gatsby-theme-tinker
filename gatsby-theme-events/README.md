@@ -23,3 +23,5 @@ module.exports = {
 #### make sure you are in your events project directory and run this
 
 ` gatsby develop `
+
+Made with love by  [Hakooi](https://hakooi.com "Hakooi | Ruby on rails studio").

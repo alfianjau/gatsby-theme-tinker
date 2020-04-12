@@ -4,6 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "organization": "hakooi",
+  "keywords": [
+    "gatsby",
+    "theme",
+    "events"
+  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
