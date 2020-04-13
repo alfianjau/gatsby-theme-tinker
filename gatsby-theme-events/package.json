@@ -1,9 +1,16 @@
 {
   "name": "@alfianjau/gatsby-theme-events",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "license": "MIT",
   "organization": "hakooi",
+  "homepage": "https://hakooi.com",
+  "bugs":"https://github.com/alfianjau/gatsby-theme-tinker/issues",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/alfianjau/gatsby-theme-tinker.git",
+    "directory": "gatsby-theme-events/"
+  },
   "keywords": [
     "gatsby",
     "theme",
